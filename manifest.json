@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "AddHeaders",
+  "version": "1.0.0",
+  "description": "JSON形式で任意のリクエストヘッダーを追加",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": ["storage", "webRequest", "webRequestBlocking", "<all_urls>"],
+  "browser_action": {
+    "default_title": "AddHeaders",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": ["background/main.js"],
+    "persistent": true
+  }
+}
